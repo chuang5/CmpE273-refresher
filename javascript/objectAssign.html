@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>object.assign</title>
+</head>
+<body>
+    <h1>The example of object.assign</h1>
+    <script type="text/javascript">
+        var Name = {firstName: "Josie", lastName: "Rogers"};
+        document.write("OldName: First name: " + Name.firstName + " Last Name: " + Name.lastName + "<br>");
+        var NewName = Object.assign({}, Name, {lastName: "Hawk"});
+        document.write("NewName: First name: " + NewName.firstName + " Last Name: " + NewName.lastName + "<br>");
+
+    </script>
+</body>
+</html>

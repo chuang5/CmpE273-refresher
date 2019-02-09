@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function</title>
+</head>
+
+<body>
+<h1>The example of function</h1>
+<script type="text/javascript">
+    var num = [1, 2, 3, 4, 5, 6, 7];
+    function squareNum() {
+        square = arguments[0] * arguments[0];
+        return square;
+    }
+    document.write("Input numbers are: ");
+    for(i = 0; i < num.length; i++){
+        document.write(num[i] + " ");
+    }
+
+    document.write("<br>Outputs are: ");
+    for(i = 0; i < num.length; i++){
+        document.write(squareNum(num[i]) + " ");
+    }
+
+</script>
+</body>
+</html>

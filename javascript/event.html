@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event</title>
+</head>
+<script type="text/javascript">
+    function squareNum() {
+        var num = document.getElementById('inputNum').value;
+        var square = num * num;
+	    document.getElementById('output').innerHTML = "The square value is " + square;
+    }
+</script>
+<h1>The example of event</h1>
+<p>Input number: <input type="number" id="inputNum"></input></p>
+<input type="button" value="calculate" onclick="squareNum()"></input>
+<p id="output"></p>
+
+</body>
+</html>

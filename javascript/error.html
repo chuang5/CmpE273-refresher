@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>errors</title>
+</head>
+
+<body>
+    <h1>The example of errors</h1>
+    <script>
+            function func(){
+                "use strict";
+                x = 1;
+            }
+            try{
+                func();
+            }catch(e){
+                document.write("Error: " + e.message);
+            }
+        </script>
+</body>
+</html>

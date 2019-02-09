@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>json</title>
+</head>
+<body>
+    <h1>The example of json</h1>
+    <script type="text/javascript">
+        var package = '{ "names":[' +
+            '{"firstName":"Edward", "lastName":"Carter"},' + 
+            '{"firstName":"Leo", "lastName":"Griffiths"},' + 
+            '{"firstName":"Emily", "lastName":"Lee"},' +
+            '{"firstName":"Josie", "lastName":"Rogers"} ]}';
+        var obj = JSON.parse(package);
+        for(i = 0; i < package.length; i++){
+            document.write("First Name: " +obj.names[i].firstName + " Last Name: " +obj.names[i].lastName + "<br>");
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inheritance</title>
+</head>
+<body>
+    <h1>The example of inheritance</h1>
+    <script type="text/javascript">
+        class Person {
+            constructor(firstName, lastName) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+            }
+            getFirstName(){
+                return this.firstName;
+            }
+            getLastName(){
+                return this.lastName;
+            }
+        }
+        class Work extends Person{
+            constructor(firstName, lastName, job){
+                super(firstName, lastName);
+                this.job = job;
+            }
+            getFirstName(){
+                return this.firstName;
+            }
+            getLastName(){
+                return this.lastName;
+            }
+            getJob(){
+                return this.job;
+            }
+        }
+        let GirlA = new Person("Emily", "Lee");
+        let GirlB = new Work("Josie", "Hawk", "student");
+        
+        document.write("Person: First Name: " + GirlA.getFirstName() + " Last Name: " + GirlA.getLastName() + "<br>");
+        document.write("Work: First Name: " + GirlB.getFirstName() + " Last Name: " + GirlB.getLastName() + " Job: " + GirlB.getJob() + "<br>");
+
+    </script>
+</body>
+</html>

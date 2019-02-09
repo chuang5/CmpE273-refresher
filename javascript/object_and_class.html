@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>object and class</title>
+</head>
+<body>
+    <h1>The example of object and class</h1>
+    <script type="text/javascript">
+    var Name = {firstName: "Josie", lastName: "Rogers"};
+    document.write("Object: First name: " + Name.firstName + " Last Name: " + Name.lastName + "<br>");
+
+    class Person {
+        constructor(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+        getFirstName(){
+            return this.firstName;
+        }
+        getLastName(){
+            return this.lastName;
+        }
+    }
+    const AGirl = new Person(Name.firstName, Name.lastName);
+    document.write("Class: First name: " + AGirl.getFirstName() 
+        + " Last Name: " + AGirl.getLastName() + "<br>");
+
+    </script>
+</body>
+</html>
